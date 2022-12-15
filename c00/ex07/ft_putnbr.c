@@ -30,7 +30,7 @@ void	ft_putnbr(int nb)
 		nbl *= -1;
 		write(1, "-", 1);
 	}
-	while (nbl % 10)
+	while (nbl)
 	{
 		c[i++] = (nbl % 10) + 48;
 		nbl /= 10;
