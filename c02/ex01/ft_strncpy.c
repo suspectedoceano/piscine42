@@ -66,7 +66,7 @@ int main()
 		j = 0;
 		//Clean the buffers
 		for (int i=0; i<BUF_SIZE; ++i)dstBuffer[i]='/';
-		for (int i=0; i<256; ++i)srcBuffer[i++]=0;
+		for (int i=0; i<256; ++i)srcBuffer[i]=0;
 
 		//Fill source with random chars
 		while ((c = rand()%27 + 97) != 123)srcBuffer[j++] = c;
