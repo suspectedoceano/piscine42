@@ -85,6 +85,8 @@ int main()
 		for (int i=0; i<BUF_SIZE; ++i) 
 			(dstBuffer[i] == 0) ? printf("0") : printf("%c ", dstBuffer[i]);
 		printf("\n\n------------------------------------------\n");
+		
+		for (int i=0; i<BUF_SIZE; ++i)dstBuffer[i]='/';
 		printf("Dest Buffer after my function     -> %s\n", ft_strncpy(dstBuffer, srcBuffer, N));
  		printf("BYTES IN MY DEST BUFFER AFTER MY FT_STRNCPY \n");
 		for (int i=0; i<BUF_SIZE; ++i)
